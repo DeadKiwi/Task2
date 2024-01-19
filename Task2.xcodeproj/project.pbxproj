@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		FA8D9C7E2B59441F00C8CD55 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D9C7D2B59441F00C8CD55 /* main.swift */; };
+		FA8D9C852B5AA88B00C8CD55 /* FileParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D9C842B5AA88B00C8CD55 /* FileParser.swift */; };
+		FA8D9C872B5AA90200C8CD55 /* FileGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D9C862B5AA90200C8CD55 /* FileGenerator.swift */; };
+		FA8D9C892B5AA96E00C8CD55 /* HTMLGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D9C882B5AA96E00C8CD55 /* HTMLGenerator.swift */; };
+		FA8D9C8B2B5AA98E00C8CD55 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D9C8A2B5AA98E00C8CD55 /* Table.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,10 @@
 /* Begin PBXFileReference section */
 		FA8D9C7A2B59441F00C8CD55 /* Task2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Task2; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA8D9C7D2B59441F00C8CD55 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		FA8D9C842B5AA88B00C8CD55 /* FileParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileParser.swift; sourceTree = "<group>"; };
+		FA8D9C862B5AA90200C8CD55 /* FileGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileGenerator.swift; sourceTree = "<group>"; };
+		FA8D9C882B5AA96E00C8CD55 /* HTMLGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLGenerator.swift; sourceTree = "<group>"; };
+		FA8D9C8A2B5AA98E00C8CD55 /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +66,36 @@
 			isa = PBXGroup;
 			children = (
 				FA8D9C7D2B59441F00C8CD55 /* main.swift */,
+				FA8D9C8C2B5AAA2900C8CD55 /* Generator */,
+				FA8D9C8D2B5AAA3600C8CD55 /* Parser */,
+				FA8D9C8E2B5AAA3F00C8CD55 /* Data */,
 			);
 			path = Task2;
+			sourceTree = "<group>";
+		};
+		FA8D9C8C2B5AAA2900C8CD55 /* Generator */ = {
+			isa = PBXGroup;
+			children = (
+				FA8D9C862B5AA90200C8CD55 /* FileGenerator.swift */,
+				FA8D9C882B5AA96E00C8CD55 /* HTMLGenerator.swift */,
+			);
+			path = Generator;
+			sourceTree = "<group>";
+		};
+		FA8D9C8D2B5AAA3600C8CD55 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				FA8D9C842B5AA88B00C8CD55 /* FileParser.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		FA8D9C8E2B5AAA3F00C8CD55 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FA8D9C8A2B5AA98E00C8CD55 /* Table.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -69,6 +105,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA8D9C812B59441F00C8CD55 /* Build configuration list for PBXNativeTarget "Task2" */;
 			buildPhases = (
+				FA8D9C922B5AABD800C8CD55 /* Resources */,
 				FA8D9C762B59441F00C8CD55 /* Sources */,
 				FA8D9C772B59441F00C8CD55 /* Frameworks */,
 				FA8D9C782B59441F00C8CD55 /* CopyFiles */,
@@ -115,12 +152,26 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		FA8D9C922B5AABD800C8CD55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FA8D9C762B59441F00C8CD55 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA8D9C852B5AA88B00C8CD55 /* FileParser.swift in Sources */,
+				FA8D9C8B2B5AA98E00C8CD55 /* Table.swift in Sources */,
 				FA8D9C7E2B59441F00C8CD55 /* main.swift in Sources */,
+				FA8D9C892B5AA96E00C8CD55 /* HTMLGenerator.swift in Sources */,
+				FA8D9C872B5AA90200C8CD55 /* FileGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

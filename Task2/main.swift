@@ -7,5 +7,14 @@
 
 import Foundation
 
-print("Hello, World!")
+let parser = FileParser()
+if CommandLine.arguments.count > 1 {
+    parser.fileName = CommandLine.arguments[1]
+}
 
+if let table = parser.makeTable() {
+    let fileGenerator: FileGenerator = HTMLGenerator(table: table)
+    fileGenerator.generate()
+} else {
+    print("No such file")
+}
